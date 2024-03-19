@@ -18,10 +18,10 @@
     "lastModified": "2024-03-18"
   },
   {
-    "title": "Note 4",
-    "tags": ["travel", "adventure"],
-    "folderPath": "",
-    "lastModified": "2024-03-18"
+    "title": "JS 的 setInterval 实验测试",
+    "tags": ["前端", "定时器"],
+    "folderPath": "./js_setInterval.md",
+    "lastModified": "2024-03-19"
   },
   {
     "title": "Note 5",
