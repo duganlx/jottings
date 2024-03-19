@@ -278,3 +278,43 @@ const TrialView: React.FC = () => {
   );
 };
 ```
+
+由于 js 是单线程的，所以每个自定义指数中的 setInterval 其实类似队列（Queue）一样，理论上的触发一到就往队列放入一个定时器函数。队列里的定时器函数一个一个的进行执行。
+
+如果在卡片里边进行耗时的操作，会导致 setInterval 执行频率与预期的不一致，可能会导致 BUG 的出现。比如在 TestCard 组件的 setInterval 是 1s 执行一次，但在 setInterval 定时函数需要执行 2s ，代码如下。根据 console 的结果，setInterval 实际执行频率为 ≥ 3s （=3s 是在只有一个 TestCard 下；>3s 是在多个 TestCard）。
+
+这样的话，在 setInterval 定时函数中执行情况也会与预期的不一致。比如，在定时函数中，设定在每分钟的开始（:00s ~ :01s）时去发送 grpc 请求去取分钟级 k 线数据，setInterval 的定时频率为 500ms ，可能会错过分钟开始而错误的未请求数据（同步、异步都存在该情况）。<u>如果定时器执行频率远大于定时器函数的耗时，则不会发生此问题。</u>
+
+如果按照该例子的话，能够命中取数逻辑的时间段只有 1s ，setInterval 的频率是 500ms ，只要取数的时间稍微长一点，或者卡片数量多一点，就必然会出现丢失请求的情况发生。
+
+```jsx
+// components/card.tsx - TestCard
+async function sleep(sec: number) {
+  const end = dayjs().add(sec, "milliseconds");
+
+  while (true) {
+    if (dayjs().unix() > end.unix()) return;
+  }
+}
+
+useEffect(() => {
+  if (conf === undefined) return;
+
+  let tid: number = 0;
+
+  if (!tid) {
+    tid = setInterval(() => {
+      const curTick = +dayjs().format("ss");
+      console.log(curTick, cid, "tick");
+      sleep(2000);
+    }, 1000) as unknown as number;
+  }
+
+  return () => {
+    if (tid) {
+      clearInterval(tid);
+      tid = 0;
+    }
+  };
+}, [conf]);
+```
