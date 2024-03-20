@@ -55,8 +55,12 @@ const clsname = useEmotionCss(() => {
       wordBreak: "break-all",
       textOverflow: "ellipsis",
       overflow: "hidden",
+
+      // todo 需测试是否可替代
       "-webkit-line-clamp": "2",
       "-webkit-box-orient": "vertical",
+      WebkitLineClamp: "2",
+      WebkitBoxOrient: "vertical",
     },
   };
 });
