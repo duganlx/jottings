@@ -22,5 +22,11 @@
     "tags": ["开发"],
     "filepath": "./webEnvQa.md",
     "lastModified": "2024-03-18"
+  },
+  {
+    "title": "深圳东西涌穿越",
+    "tags": ["旅行", "徒步"],
+    "folderPath": "./tripSzDxc.md",
+    "lastModified": "2024-03-24"
   }
 ]
