@@ -7,6 +7,13 @@ Q：好用的 vscode 插件
 - `Docker`, `Remote - Container`
 - `Prettier - Code formatter`
 
+Q：vscode 配置
+
+```
+Tab Size: 2
+Word Wrap: on
+```
+
 Q：wins 开发软件
 
 `wsl2`, `Windows Terminal`

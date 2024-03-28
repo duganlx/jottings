@@ -1,32 +1,230 @@
 [
   {
+    "title": "gitlab 访问权限调研",
+    "tags": ["后端"],
+    "folderPath": "./backEnd/be_gitlabAuth.md",
+    "lastModified": "2023-11-20"
+  },
+
+
+  {
+    "title": "ant design pro 使用",
+    "tags": ["前端"],
+    "filepath": "./frontEnd/antdpro.md",
+    "lastModified": "2024-03-28"
+  },
+  {
+    "title": "s2Table 使用总结",
+    "tags": ["前端"],
+    "filepath": "./frontEnd/antvS2.md",
+    "lastModified": "2024-03-28"
+  },
+  {
+    "title": "typescript 通过 apisix 实现与 kafka 交互",
+    "tags": ["前端"],
+    "filepath": "./frontEnd/apisixKafka.md",
+    "lastModified": "2024-03-28"
+  },
+  {
+    "title": "页面内容溢出省略效果",
+    "tags": ["前端"],
+    "filepath": "./frontEnd/dis_ellipsis.md",
+    "lastModified": "2024-03-28"
+  },
+  {
+    "title": "前端依赖库",
+    "tags": ["前端"],
+    "filepath": "./frontEnd/docs.md",
+    "lastModified": "2024-03-28"
+  },
+  {
     "title": "JS 的 setInterval 实验测试",
-    "tags": ["前端", "js", "定时器"],
-    "filepath": "./js_setInterval.md",
+    "tags": ["前端", "js"],
+    "filepath": "./frontEnd/js_setInterval.md",
     "lastModified": "2024-03-19"
   },
   {
     "title": "react-grid-layout 布局系统",
     "tags": ["前端", "布局"],
-    "filepath": "./reactGridLayout.md",
+    "filepath": "./frontEnd/reactGridLayout.md",
+    "lastModified": "2024-03-22"
+  },
+
+
+  {
+    "title": "apisix",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/apisix.md",
     "lastModified": "2024-03-22"
   },
   {
-    "title": "flex布局研究",
-    "tags": ["前端", "css", "布局"],
-    "filepath": "",
-    "lastModified": "2024-03-18"
+    "title": "将 .ipynb 文件转换成对应的 .md 文件",
+    "tags": ["操作笔记", "脚本"],
+    "filepath": "./ops/bash_ipynb2md.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "docker",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/docker.md",
+    "lastModified": "2024-03-22"
   },
   {
     "title": "开发环境 Q&A",
-    "tags": ["开发"],
-    "filepath": "./webEnvQa.md",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/envQa.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "git",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/git.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "linux 使用",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/linux.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "nginx",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/nginx.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "redis",
+    "tags": ["操作笔记"],
+    "filepath": "./ops/redis.md",
+    "lastModified": "2024-03-22"
+  },
+
+
+  {
+    "title": "BOLL",
+    "tags": ["股市"],
+    "filepath": "./ta/boll.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "KDJ",
+    "tags": ["股市"],
+    "filepath": "./ta/kdj.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "MA",
+    "tags": ["股市"],
+    "filepath": "./ta/ma.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "MACD",
+    "tags": ["股市"],
+    "filepath": "./ta/macd.md",
+    "lastModified": "2024-03-22"
+  },
+  {
+    "title": "股票术语",
+    "tags": ["股市"],
+    "filepath": "./ta/terms.md",
+    "lastModified": "2024-03-22"
+  },
+  
+
+  {
+    "title": "用户中心",
+    "tags": ["Eam"],
+    "filepath": "./eam/auth.md",
     "lastModified": "2024-03-18"
+  },
+  {
+    "title": "Gsf",
+    "tags": ["Eam"],
+    "filepath": "./eam/gsf.md",
+    "lastModified": "2024-03-18"
+  },
+  {
+    "title": "项目点亮 设计实现",
+    "tags": ["Eam"],
+    "filepath": "./eam/proposalstar.md",
+    "lastModified": "2024-03-18"
+  },
+  {
+    "title": "风控通知设计&实现",
+    "tags": ["Eam"],
+    "filepath": "./eam/risk.md",
+    "lastModified": "2024-03-18"
+  },
+  {
+    "title": "结算明细报表",
+    "tags": ["Eam"],
+    "filepath": "./eam/settlementdetail.md",
+    "lastModified": "2024-03-18"
+  },
+  {
+    "title": "工作台",
+    "tags": ["Eam"],
+    "filepath": "./eam/workspace.md",
+    "lastModified": "2024-03-18"
+  },
+
+
+  {
+    "title": "The Finals",
+    "tags": ["游戏"],
+    "folderPath": "./other/game_theFinals.md",
+    "lastModified": "2024-03-24"
+  },
+  {
+    "title": "电脑选购笔记",
+    "tags": ["购物"],
+    "folderPath": "./other/live_computer.md",
+    "lastModified": "2024-03-24"
+  },
+  {
+    "title": "科研论文",
+    "tags": ["科研"],
+    "folderPath": "./other/sci_paper.md",
+    "lastModified": "2024-03-24"
   },
   {
     "title": "深圳东西涌穿越",
     "tags": ["旅行", "徒步"],
-    "folderPath": "./tripSzDxc.md",
+    "folderPath": "./other/tripSzDxc.md",
     "lastModified": "2024-03-24"
+  },
+
+
+  {
+    "title": "我存在 （近乎正常）",
+    "tags": ["音乐"],
+    "folderPath": "./music/wcz.md",
+    "lastModified": "2024-01-03"
+  },
+  {
+    "title": "夕阳无限好",
+    "tags": ["音乐"],
+    "folderPath": "./music/xywxh.md",
+    "lastModified": "2024-01-05"
+  },
+  {
+    "title": "心之科学",
+    "tags": ["音乐"],
+    "folderPath": "./music/xzkx.md",
+    "lastModified": "2024-01-08"
+  },
+  {
+    "title": "与我常在",
+    "tags": ["音乐"],
+    "folderPath": "./music/ywcz.md",
+    "lastModified": "2024-01-11"
+  },
+  {
+    "title": "永远飞行模式",
+    "tags": ["音乐"],
+    "folderPath": "./music/yyfxms.md",
+    "lastModified": "2024-01-15"
   }
 ]
